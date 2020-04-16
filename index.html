@@ -7,6 +7,11 @@
                 var date = new Date();
                 document.getElementById("showme").innerHTML = document.getElementById("su").value + "，你好！现在是：" + date.toLocaleDateString() + " " + date.toLocaleTimeString() + "。让我们来：";
             }
+            function jisuan() {
+                var chengshu1 = document.getElementById("chengshu1").value;
+                var chengshu2 = document.getElementById("chengshu2").value;
+                document.getElementById("result").innerHTML = chengshu1 * chengshu2;
+            }
         </script>
     </head>
     <body>
@@ -41,7 +46,7 @@
             <span id="result">
             </span>
             <br>
-            <input id="jisuan" type="button" style="background:#3385ff;color:#ffffff" value="calculate" />
+            <input id="jisuan" type="button" style="background:#3385ff;color:#ffffff" value="calculate" onclick="jisuan();"/>
         </div>
     </body>
 </html>
