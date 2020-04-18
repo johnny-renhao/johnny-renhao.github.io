@@ -11,6 +11,9 @@
                 var chengshu1 = document.getElementById("chengshu1").value;
                 var chengshu2 = document.getElementById("chengshu2").value;
                 document.getElementById("result").innerHTML = chengshu1 * chengshu2;
+                var jiashu1 = Number(document.getElementById("jiashu1").value);
+                var jiashu2 = Number(document.getElementById("jiashu2").value);
+                document.getElementById("result2").innerHTML = jiashu1 + jiashu2;
             }
         </script>
     </head>
@@ -44,6 +47,15 @@
             <input id="chengshu2" type="text"/>
             =
             <span id="result">
+            </span>
+            <br>
+            <input id="jisuan" type="button" style="background:#3385ff;color:#ffffff" value="calculate" onclick="jisuan();"/>
+            <br>
+            <input id="jiashu1" type="text"/>
+            +
+            <input id="jiashu2" type="text"/>
+            =
+            <span id="result2">
             </span>
             <br>
             <input id="jisuan" type="button" style="background:#3385ff;color:#ffffff" value="calculate" onclick="jisuan();"/>
