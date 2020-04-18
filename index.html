@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>我的计算器，世界第一帅</title>
+        <script type="text/javascript" language="javascript" charset="utf-8">
+            function upLoadData(){
+                var date = new Date();
+                document.getElementById("showme").innerHTML = document.getElementById("su").value + "，你好！现在是：" + date.toLocaleDateString() + " " + date.toLocaleTimeString() + "。让我们来：";
+            }
+            function jisuan() {
+                var chengshu1 = document.getElementById("chengshu1").value;
+                var chengshu2 = document.getElementById("chengshu2").value;
+                document.getElementById("result").innerHTML = chengshu1 * chengshu2;
+            }
+            function jisuan2() {
+                var jiashu1 = Number(document.getElementById("jiashu1").value);
+                var jiashu2 = Number(document.getElementById("jiashu2").value);
+                document.getElementById("result2").innerHTML = jiashu1 + jiashu2;
+            }
+            function jisuan3() {
+                var beichushu = document.getElementById("beichushu").value;
+                var chushu = document.getElementById("chushu").value;
+                document.getElementById("result3").innerHTML = beichushu / chushu;
+            }
+            function jisuan4() {
+                var beijianshu = document.getElementById("beijianshu").value;
+                var jianshu = document.getElementById("jianshu").value;
+                document.getElementById("result4").innerHTML = beijianshu - jianshu;
+            }
+        </script>
+    </head>
+    <body>
+        <br>
+        <div align="center">
+            <br>
+            <input id="chengshu1" type="text"/>
+            X
+            <input id="chengshu2" type="text"/>
+            =
+            <span id="result">
+            </span>
+            <br>
+            <input id="jisuan" type="button" style="background:#3385ff;color:#ffffff" value="calculate" onclick="jisuan();"/>
+            <br>
+            <input id="jiashu1" type="text"/>
+            +
+            <input id="jiashu2" type="text"/>
+            =
+            <span id="result2">
+            </span>
+            <br>
+            <input id="jisuan2" type="button" style="background:#3385ff;color:#ffffff" value="calculate" onclick="jisuan2();"/>
+            <br>
+            <input id="beichushu" type="text"/>
+            /
+            <input id="chushu" type="text">
+            =
+            <span id="result3">
+            </span>
+            <br>
+            <input id="jisuan3" type="button" style="background:#3385ff;color:#ffffff" value="calculate" onclick="jisuan3();"/>
+            <br>
+            <input id="beijianshu" type="text">
+            -
+            <input id="jianshu" type="text">
+            =
+            <span id="result4">
+            </span>
+            <br>
+            <input id="jisuan4" type="button" style="background:#3385ff;color:#ffffff" value="calculate" onclick="jisuan4();"/>
+        </div>
+    </body>
+</html>
