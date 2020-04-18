@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-        <title>我的小百度，世界第一酷</title>
+        <title>我的计算器，世界第一帅</title>
         <script type="text/javascript" language="javascript" charset="utf-8">
             function upLoadData(){
                 var date = new Date();
@@ -17,33 +17,21 @@
                 var jiashu2 = Number(document.getElementById("jiashu2").value);
                 document.getElementById("result2").innerHTML = jiashu1 + jiashu2;
             }
-            
+            function jisuan3() {
+                var beichushu = document.getElementById("beichushu").value;
+                var chushu = document.getElementById("chushu").value;
+                document.getElementById("result3").innerHTML = beichushu / chushu;
+            }
+            function jisuan4() {
+                var beijianshu = document.getElementById("beijianshu").value;
+                var jianshu = document.getElementById("jianshu").value;
+                document.getElementById("result4").innerHTML = beijianshu - jianshu;
+            }
         </script>
     </head>
     <body>
         <br>
-        <a href="http://www.baidu.com/">百度</a>
-        <a href="http://www.xierenhao.com/">我的作品</a>
-        <a href="https://www.114la.com/other/rgb.htm">颜色代码</a>
-        <a href="https://voice.baidu.com/act/newpneumonia/newpneumonia/?from=osari_pc_1">抗击肺炎</a>
-        <a href="https://map.baidu.com/@13154147,2800985,13z">百度地图</a>
-        <a href="https://www.baidu.com/s?ie=utf-8&f=3&rsv_bp=1&rsv_idx=1&tn=baidu&wd=%E7%8E%8B%E7%89%8C%E5%AF%B9%E7%8E%8B%E7%89%8C%E7%AC%AC%E4%BA%94%E5%AD%A3&oq=%E5%BA%A6%E7%A7%98&rsv_pq=c3903cf90005a4a6&rsv_t=9f8bKnWSlnwUBdG1zk7QTFC7+gCMrx2+eVt2PHaI0lDn90jVO4FaSoHFi1U&rqlang=cn&rsv_enter=0&rsv_dl=th_1&rsv_sug3=3&rsv_sug1=2&rsv_sug7=001&rsv_sug2=1&rsp=1&rsv_sug9=es_0_1&inputT=3964&rsv_sug4=4844&rsv_sug=9">王牌对王牌</a>
-        <br>
         <div align="center">
-            <img src="https://www.baidu.com/img/bd_logo1.png" align="middle" width="200" heigth="98"></img>
-        </div>
-        <br>
-        <div align="center">
-            <form action="test.php" method="post">
-                <input id="su" type="text" value=""/>
-                <input type="button" style="background:#3385ff;color:#ffffff" value="百度一下" onclick="upLoadData();"/>
-                <br>
-            </form>
-            <span id="showme"></span>
-            <br>
-            <span align="right">
-                有事捜一搜，没事看一看
-            </span>
             <br>
             <input id="chengshu1" type="text"/>
             X
@@ -61,7 +49,25 @@
             <span id="result2">
             </span>
             <br>
-            <input id="jisuan" type="button" style="background:#3385ff;color:#ffffff" value="calculate" onclick="jisuan2();"/>
+            <input id="jisuan2" type="button" style="background:#3385ff;color:#ffffff" value="calculate" onclick="jisuan2();"/>
+            <br>
+            <input id="beichushu" type="text"/>
+            /
+            <input id="chushu" type="text">
+            =
+            <span id="result3">
+            </span>
+            <br>
+            <input id="jisuan3" type="button" style="background:#3385ff;color:#ffffff" value="calculate" onclick="jisuan3();"/>
+            <br>
+            <input id="beijianshu" type="text">
+            -
+            <input id="jianshu" type="text">
+            =
+            <span id="result4">
+            </span>
+            <br>
+            <input id="jisuan4" type="button" style="background:#3385ff;color:#ffffff" value="calculate" onclick="jisuan4();"/>
         </div>
     </body>
 </html>
